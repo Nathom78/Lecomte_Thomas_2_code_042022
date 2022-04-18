@@ -366,9 +366,9 @@ a:hover {
     .site-navigation {
         position: absolute;
         top: 50%;
-        right: 20px;
-        transform: translate(0, -50%);
+        right: 20px;        
         -webkit-transform: translateY(-50%);
+        transform: translate(0, -50%);
     }
     .nav > li .dropdown-menu a,
     .nav > li .dropdown-menu a:hover {
@@ -549,9 +549,9 @@ a[data-lightbox]:hover::before {
     font-weight: 100;
     z-index: 1;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 50%;    
     -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 a[data-lightbox]:hover img {
@@ -728,7 +728,13 @@ h1 {
 
 h4 {
     color: #333333!important;
+    position: static;
+    max-width: 575px;
+    font-style: italic;
+    font-size: 15px;
+    margin:auto;    
 }
+
 
 .icons {
     margin-bottom: 14px;
@@ -918,10 +924,10 @@ h4 {
         margin-right: 0;
     }
     .site-navigation {
-        position: inherit;
-        transform: none;
+        position: inherit;        
         -webkit-transform: none;
         -ms-transform: none;
+        transform: none;
     }
     .nav > li {
         margin-top: 0;
